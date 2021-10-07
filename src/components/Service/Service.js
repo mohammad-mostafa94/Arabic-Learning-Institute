@@ -50,9 +50,6 @@ const Service = () => {
                 Donation: 100
             },
         ]
-      
-
-    
 
     return (
         <div>
