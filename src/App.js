@@ -3,9 +3,11 @@ import {
 } from "react-router-dom";
 import './App.css';
 import About from "./components/AboutUs/About";
+import Community from "./components/Community/Community";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage/HomePage";
+import NotFound from "./components/NotFound/NotFound";
 import Service from "./components/Service/Service";
 
 function App() {
@@ -14,10 +16,12 @@ function App() {
     <Header/>
     <Switch>
       <Route exact path="/" component={HomePage}/>
+      <Route exact path="/home" component={HomePage}/>
       <Route exact path="/service" component={Service}/>
       <Route exact path="/about" component={About}/>
+      <Route exact path="/community" component={Community}/>
 
-      <Route path=""/>
+      <Route  path="*" component={NotFound}/>
         
     </Switch>
     <Footer/>
