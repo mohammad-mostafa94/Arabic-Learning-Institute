@@ -5,9 +5,31 @@ import React from 'react';
 
 const HomePage = () => {
 
+    const mainCourses =
+    [
+        {
+            name: "Masum Bhuiyan",
+            image: "https://i.ibb.co/KVNKNf2/masum.jpg",
+            Donation: 100
+        },
+        {
+            name: "Masum Bhuiyan",
+            image: "https://i.ibb.co/KVNKNf2/masum.jpg",
+            Donation: 100
+        },
+        {
+            name: "Masum Bhuiyan",
+            image: "https://i.ibb.co/KVNKNf2/masum.jpg",
+            Donation: 100
+        },
+        
+]
+
+
     
     return (
         <MDBRow className='row-cols-1 row-cols-md-3 g-4 m-3'>
+            {mainCourses.map(cr=> console.log(cr))}
       <MDBCol>
         <MDBCard>
           <MDBCardImage
