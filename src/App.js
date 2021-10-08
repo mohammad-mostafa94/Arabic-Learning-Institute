@@ -3,7 +3,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import About from "./components/AboutUs/About";
-import Community from "./components/Community/Community";
+import Features from "./components/Features/Features";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage/HomePage";
@@ -19,7 +19,7 @@ function App() {
       <Route exact path="/home" component={HomePage}/>
       <Route exact path="/service" component={Services}/>
       <Route exact path="/about" component={About}/>
-      <Route exact path="/community" component={Community}/>
+      <Route exact path="/features" component={Features}/>
 
       <Route  path="*" component={NotFound}/>
         

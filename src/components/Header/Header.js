@@ -23,9 +23,9 @@ const Header = () => {
             activeStyle={routeStyle}
             >About Us</NavLink>
 
-            <NavLink className="link-style" to="/community" 
+            <NavLink className="link-style" to="/features" 
             activeStyle={routeStyle}
-            >Community</NavLink>
+            >Features</NavLink>
 
             <h1 className="m-3">Mono Bhuiyan Arabic Learning Institute</h1>
 
