@@ -9,7 +9,8 @@ const Header = () => {
     }
     return (
         <div className="header-container">
-            <NavLink className="link-style" to="/home" 
+            <header>
+            <NavLink className="link-style" to="/home"
             // activeClassName="active"
             activeStyle={routeStyle}
             >Home</NavLink>
@@ -28,6 +29,7 @@ const Header = () => {
 
             <h1 className="m-3">Mono Bhuiyan Arabic Learning Institute</h1>
 
+            </header>
         </div>
     );
 };

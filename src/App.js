@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage/HomePage";
 import NotFound from "./components/NotFound/NotFound";
-import Service from "./components/Service/Service";
+import Services from "./components/Service/Services";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
     <Switch>
       <Route exact path="/" component={HomePage}/>
       <Route exact path="/home" component={HomePage}/>
-      <Route exact path="/service" component={Service}/>
+      <Route exact path="/service" component={Services}/>
       <Route exact path="/about" component={About}/>
       <Route exact path="/community" component={Community}/>
 
@@ -26,10 +26,6 @@ function App() {
     </Switch>
     <Footer/>
   </Router>
-    // <div>
-    //   <h1>Bismillah</h1>
-      
-    // </div>
   );
 }
 

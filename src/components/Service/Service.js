@@ -1,60 +1,23 @@
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCol } from 'mdb-react-ui-kit';
 import React from 'react';
+const Service = (props) => {
 
-const Service = () => {
-
-    const courses =
-        [
-            {
-                name: "Masum Bhuiyan",
-                image: "https://i.ibb.co/KVNKNf2/masum.jpg",
-                Donation: 100
-            },
-            {
-                name: "Masum Bhuiyan",
-                image: "https://i.ibb.co/KVNKNf2/masum.jpg",
-                Donation: 100
-            },
-            {
-                name: "Masum Bhuiyan",
-                image: "https://i.ibb.co/KVNKNf2/masum.jpg",
-                Donation: 100
-            },
-            {
-                name: "Masum Bhuiyan",
-                image: "https://i.ibb.co/KVNKNf2/masum.jpg",
-                Donation: 100
-            },
-            {
-                name: "Masum Bhuiyan",
-                image: "https://i.ibb.co/KVNKNf2/masum.jpg",
-                Donation: 100
-            },
-            {
-                name: "Masum Bhuiyan",
-                image: "https://i.ibb.co/KVNKNf2/masum.jpg",
-                Donation: 100
-            },
-            {
-                name: "Masum Bhuiyan",
-                image: "https://i.ibb.co/KVNKNf2/masum.jpg",
-                Donation: 100
-            },
-            {
-                name: "Masum Bhuiyan",
-                image: "https://i.ibb.co/KVNKNf2/masum.jpg",
-                Donation: 100
-            },
-            {
-                name: "Masum Bhuiyan",
-                image: "https://i.ibb.co/KVNKNf2/masum.jpg",
-                Donation: 100
-            },
-        ]
+    const {title,image} = props.service;
 
     return (
-        <div>
-            <h1>Service</h1>
-            {courses.map(cr=> console.log(cr))}
+        <div className="">
+            <MDBCol>
+                <MDBCard className='h-50 w-50'>
+                <MDBCardImage
+                    src={image}
+                    alt='...'
+                    position='top'
+                />
+                <MDBCardBody>
+                    <MDBCardTitle>{title}</MDBCardTitle>
+                </MDBCardBody>
+                </MDBCard>
+            </MDBCol>
         </div>
     );
 };

@@ -2,7 +2,7 @@ import { MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol }
 import React from 'react';
 
 const Course = (props) => {
-    const {name,image,Price,description} = props.course;
+    const {title,image,Price,description} = props.course;
     return (
         <div>
            <MDBCol>
@@ -13,7 +13,7 @@ const Course = (props) => {
                     position='top'
                 />
                 <MDBCardBody>
-                    <MDBCardTitle>{name}</MDBCardTitle>
+                    <MDBCardTitle>{title}</MDBCardTitle>
                     <MDBCardText>
                     {description}
                     </MDBCardText>
