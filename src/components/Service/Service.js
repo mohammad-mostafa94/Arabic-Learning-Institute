@@ -5,7 +5,7 @@ const Service = (props) => {
     const {title,image} = props.service;
 
     return (
-        <div className="">
+        <div className="mb-3">
             <MDBCol>
                 <MDBCard className='h-50 w-50'>
                 <MDBCardImage

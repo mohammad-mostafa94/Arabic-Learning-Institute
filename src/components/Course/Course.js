@@ -18,6 +18,7 @@ const Course = (props) => {
                     {description}
                     </MDBCardText>
                     <MDBCardTitle>Course Price: {Price}</MDBCardTitle>
+                    <button className="btn btn-primary">Buy Now</button>
                 </MDBCardBody>
                 </MDBCard>
             </MDBCol>

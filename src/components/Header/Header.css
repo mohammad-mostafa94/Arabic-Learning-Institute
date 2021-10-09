@@ -1,12 +1,11 @@
 .header-container {
     text-align: center;
     background-color: aquamarine;
-    padding: 30px;
 }
 
 .link-style {
     margin: 5px;
     padding: 10px;
-
+    font-size: x-large;
     color: rgb(26, 36, 26);
 }

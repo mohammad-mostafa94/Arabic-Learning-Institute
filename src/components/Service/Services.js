@@ -52,10 +52,10 @@ const Services = () => {
 
     return (
         <>
-            <h1 className="text-center m-5">Our Services</h1>
-         <div className="d-flex justify-content-center text-center">
+        <h1 className="text-center text-primary m-5">Our Services</h1>
+        <div className="d-flex justify-content-center text-center">
             <section className="m-5"></section>
-            <section className="">
+            <section>
                 <MDBRow className='row-cols-1 row-cols-md-3 g-1 '>
                     {services.map(service=> <Service service={service}></Service>)}
                 </MDBRow>

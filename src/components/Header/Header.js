@@ -1,34 +1,43 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Bars, Nav, NavMenu } from '../Navbar/NavbarElements';
 import './Header.css';
+
 
 const Header = () => {
     const routeStyle = {
-        fontWeight: "bold",
-        color: "black"
+        color: "red"
     }
     return (
-        <div className="header-container">
+        <div  className="header-container">
             <header>
-            <NavLink className="link-style" to="/home"
-            // activeClassName="active"
-            activeStyle={routeStyle}
-            >Home</NavLink>
-
-            <NavLink className="link-style" to="/service" 
-            activeStyle={routeStyle}
-            > Services</NavLink>
-
-            <NavLink className="link-style" to="/about" 
-            activeStyle={routeStyle}
-            >About Us</NavLink>
-
-            <NavLink className="link-style" to="/features" 
-            activeStyle={routeStyle}
-            >Features</NavLink>
-
-            <h1 className="m-3">Mono Bhuiyan Arabic Learning Institute</h1>
-
+                <section>
+                <>
+                    <Nav>
+                        <Bars/>
+                        <NavMenu className="mx-auto">
+                            <NavLink activeStyle={routeStyle}  to="/home" >
+                                Home
+                            </NavLink>
+                            <NavLink activeStyle={routeStyle} className="link-style" to="/service" >
+                                Service
+                            </NavLink>
+                            <NavLink activeStyle={routeStyle} className="link-style" to='/about' >
+                                About
+                            </NavLink>
+                            <NavLink activeStyle={routeStyle} className="link-style" to="/features" >
+                                Features
+                            </NavLink>
+                        </NavMenu>
+                    </Nav>
+                </>
+                </section>
+                <section>
+                    <div className="">
+                        <h1>Mono Bhuiyan Arabic Learning Institute</h1>
+                        <p>Quran  is Arabic language.</p>
+                    </div>
+                </section>
             </header>
         </div>
     );
