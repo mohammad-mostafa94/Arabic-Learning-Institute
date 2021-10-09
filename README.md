@@ -2,4 +2,6 @@
 
 ## Properties
 
-- The 
+- Three different types course.
+- Contact easily.
+- Best services
