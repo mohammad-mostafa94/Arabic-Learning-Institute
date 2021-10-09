@@ -6,7 +6,9 @@ import './Header.css';
 
 const Header = () => {
     const routeStyle = {
-        color: "red"
+        color: "red",
+        background: "blue",
+        borderRadius:"10px"
     }
     return (
         <div  className="header-container">
