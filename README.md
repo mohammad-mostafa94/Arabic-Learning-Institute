@@ -1,5 +1,5 @@
 # Mono Bhuiyan Arabic Learning Institute
-Live Link:
+Live Link: https://arabic-learning-institute.netlify.app/
 
 ## Properties
 
