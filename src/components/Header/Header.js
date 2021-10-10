@@ -18,7 +18,7 @@ const Header = () => {
                     <Nav>
                         <Bars/>
                         <NavMenu className="mx-auto">
-                            <NavLink activeStyle={routeStyle}  to="/home" >
+                            <NavLink activeStyle={routeStyle} className="link-style" to="/home" >
                                 Home
                             </NavLink>
                             <NavLink activeStyle={routeStyle} className="link-style" to="/service" >
